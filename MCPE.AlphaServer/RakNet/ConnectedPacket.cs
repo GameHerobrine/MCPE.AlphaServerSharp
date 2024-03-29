@@ -23,6 +23,10 @@ public class ConnectedPacket
     public const int RELIABLE = 2;
     public const int RELIABLE_ORDERED = 3;
     public const int RELIABLE_SEQUENCED = 4;
+    public const int UNRELIABLE_WITH_ACK_RECEIPT = 5;
+    // seems to not exists in original public const int UNRELIABLE_SEQUENCED_WITH_ACK_RECEIPT = 6;
+    public const int RELIABLE_WITH_ACK_RECEIPT = 6;
+    public const int RELIABLE_ORDERED_WITH_ACK_RECEIPT = 7;
 
     internal byte Type;
     internal int OrderingChannel;
